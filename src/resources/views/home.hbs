@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <meta charset='utf-8' />
+    <title>Example App</title>
+  </head>
+  <body>
+    <div class='mt-4'>
+      <div class='row'>
+        {{#each courses}}
+          <div class='col-sm-6 col-lg-4'>
+            <div class='card' style='width: 18rem;'>
+              <a href='/{{this.slug}}'>
+                <img src='{{this.img}}' class='card-img-top' alt='...' />
+              </a>
+              <div class='card-body'>
+                <a href='/{{this.slug}}'>
+                  <h5 class='card-title'>Card title</h5>
+                </a>
+                <p class='card-text'>{{this.title}}</p>
+                <a href='#' class='btn btn-primary'>Nut nhan</a>
+              </div>
+            </div>
+          </div>
+        {{/each}}
+      </div>
+    </div>
+
+  </body>
+</html>
